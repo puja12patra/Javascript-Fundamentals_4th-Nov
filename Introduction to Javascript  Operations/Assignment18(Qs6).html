@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./Assignment18(Qs6).js"></script>
+    <title>BMI calculator</title>
+</head>
+
+<body>
+    <div class="container flex justify-center items-center mt-5">
+        <div class="card  w-[600px] bg-sky-200 rounded-lg">
+            <div class="card_header flex justify-center items-center text-center bg-sky-700 h-16 rounded-lg rounded-b-none text-white">BMI CALCULATOR</div>
+            <div class="card_body bg-grey-800">
+                <form class="flex flex-col items-center gap-4 mt-1" onsubmit="return false">
+                    <div class="form_grp flex flex-col">
+                        <label> Weight(Kg): </label>
+                        <input type="text" name="" id="weight" placeholder="value must be in Kg" class="w-72 h-10 rounded-lg border-2 border-gray-400 p-1"/>
+                    </div>
+                    <div class="form_grp flex flex-col">
+                        <label> Height(Meter): </label>
+                        <input type="text" name="" id="height" placeholder="value must be in Meter" class="w-72 h-10 rounded-lg border-2 border-gray-400 p-1"/>
+                    </div>
+                    <div class="form_grp flex flex-col">
+                        <label> BMI Value: </label>
+                        <input type="text" name="" id="bmivalue" class="w-72 h-10 rounded-lg border-2 border-gray-400 p-1"/>
+                    </div>
+                    <div class="form_grp flex flex-col" >
+                        <button type="submit" class="bg-lime-600 text-white rounded-lg p-2 " onclick="calculates_BMI()">Check BMI</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card_footer flex justify-center items-center text-white bg-sky-700 h-16 rounded-lg rounded-t-none mt-2 text-center">A Healthy BMI ranges between 19 to 25</div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
